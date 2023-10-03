@@ -2,8 +2,7 @@ package org.example;
 
 import java.util.Scanner;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -59,35 +58,19 @@ public class Main {
     }
 
     public static boolean isPositive(int x){
-        boolean res;
-        if (x>=0) {
-            res = true;
-        }
-        else {
-            res = false;
-        }
+        boolean res = (x>=0);
         return res;
     }
 
     public static boolean is2Digits(int x){
-        boolean res;
-        if ((int)x/100 == 0){
-            res = true;
-        }
-        else {
-            res = false;
-        }
+        boolean res = (int)x/100 == 0;
         return res;
     }
 
     public static boolean isUpperCase(char x){
-        boolean res;
-        if (Character.isUpperCase(x)){
-            res = true;
-        }
-        else {
-            res = false;
-        }
+        boolean res = Character.isUpperCase(x);
         return res;
     }
+
+
 }
