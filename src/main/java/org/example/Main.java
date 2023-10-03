@@ -32,12 +32,22 @@ public class Main {
         //Задание 5
         System.out.println("\nВведите число: ");
         int digit = in.nextInt();
-        System.out.println("Число из двух знаков? " + is2Digits(digit));*/
+        System.out.println("Число из двух знаков? " + is2Digits(digit));
 
         //Задание 6
         System.out.println("\nВведите букву: ");
         char charUpper = in.nextLine().charAt(0);
-        System.out.println("Буква большая? " + isUpperCase(charUpper));
+        System.out.println("Буква большая? " + isUpperCase(charUpper));*/
+
+        //Задание 7
+        System.out.println("\nВведите границу 1: ");
+        int num1 = in.nextInt();
+        System.out.println("\nВведите границу 2: ");
+        int num2 = in.nextInt();
+        System.out.println("\nВведите число: ");
+        int num3 = in.nextInt();
+        System.out.println("Входит ли число в диапазон? " + isInRange(num1, num2, num3));
+
     }
 
     public static double fraction(double x) {
@@ -53,24 +63,27 @@ public class Main {
         return res;
     }
 
-    public static int charToNum(char x){
-        return  (int)x;
+    public static int charToNum(char x) {
+        return (int) x;
     }
 
-    public static boolean isPositive(int x){
-        boolean res = (x>=0);
+    public static boolean isPositive(int x) {
+        boolean res = (x >= 0);
         return res;
     }
 
-    public static boolean is2Digits(int x){
-        boolean res = (int)x/100 == 0;
+    public static boolean is2Digits(int x) {
+        boolean res = (int) x / 100 == 0;
         return res;
     }
 
-    public static boolean isUpperCase(char x){
+    public static boolean isUpperCase(char x) {
         boolean res = Character.isUpperCase(x);
         return res;
     }
 
+    public static boolean isInRange(int a, int b, int num) {
+        return ((a <= num && num <= b) || (a >= num && num >= b));
+    }
 
 }
