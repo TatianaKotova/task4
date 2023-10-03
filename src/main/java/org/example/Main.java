@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        //Задание 1
+        /*//Задание 1
         System.out.println("Введите дробное число:");
         double x = in.nextDouble();
         System.out.println("Дробная часть: ");
@@ -28,8 +28,12 @@ public class Main {
         //Задание 4
         System.out.println("\nВведите число: ");
         int posOrNot = in.nextInt();
-        System.out.println("Число положительное? " + isPositive(posOrNot));
+        System.out.println("Число положительное? " + isPositive(posOrNot));*/
 
+        //Задание 5
+        System.out.println("\nВведите число: ");
+        int digit = in.nextInt();
+        System.out.println("Число из двух знаков? " + is2Digits(digit));
     }
 
     public static double fraction(double x) {
@@ -52,6 +56,17 @@ public class Main {
     public static boolean isPositive(int x){
         boolean res;
         if (x>=0) {
+            res = true;
+        }
+        else {
+            res = false;
+        }
+        return res;
+    }
+
+    public static boolean is2Digits(int x){
+        boolean res;
+        if ((int)x/100 == 0){
             res = true;
         }
         else {
