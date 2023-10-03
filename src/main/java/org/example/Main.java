@@ -9,7 +9,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
 
         //Задание 1
-        /*System.out.println("Введите дробное число:");
+        System.out.println("Введите дробное число:");
         double x = in.nextDouble();
         System.out.println("Дробная часть: ");
         System.out.format("%.3f", fraction(x));
@@ -23,7 +23,7 @@ public class Main {
         System.out.println("\nВведите цифру (от 0 до 9): ");
         String inputChar = in.nextLine();
         char charIn = inputChar.charAt(0);
-        System.out.println("Код символа " + charIn + ": " + charToNum(charIn));*/
+        System.out.println("Код символа " + charIn + ": " + charToNum(charIn));
 
         //Задание 4
         System.out.println("\nВведите число: ");
