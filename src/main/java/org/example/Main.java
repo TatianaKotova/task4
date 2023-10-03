@@ -37,7 +37,7 @@ public class Main {
         //Задание 6
         System.out.println("\nВведите букву: ");
         char charUpper = in.nextLine().charAt(0);
-        System.out.println("Буква большая? " + isUpperCase(charUpper));*/
+        System.out.println("Буква большая? " + isUpperCase(charUpper));
 
         //Задание 7
         System.out.println("\nВведите границу 1: ");
@@ -46,8 +46,14 @@ public class Main {
         int num2 = in.nextInt();
         System.out.println("\nВведите число: ");
         int num3 = in.nextInt();
-        System.out.println("Входит ли число в диапазон? " + isInRange(num1, num2, num3));
+        System.out.println("Входит ли число в диапазон? " + isInRange(num1, num2, num3));*/
 
+        //Задание 8
+        System.out.println("\nВведите число 1: ");
+        int num1 = in.nextInt();
+        System.out.println("\nВведите число 2: ");
+        int num2 = in.nextInt();
+        System.out.println("Является ли одно число делителем другого? " + isDivisor(num1, num2));
     }
 
     public static double fraction(double x) {
@@ -84,6 +90,10 @@ public class Main {
 
     public static boolean isInRange(int a, int b, int num) {
         return ((a <= num && num <= b) || (a >= num && num >= b));
+    }
+
+    public static boolean isDivisor(int a, int b) {
+        return ((a % b == 0) || (b % a == 0));
     }
 
 }
