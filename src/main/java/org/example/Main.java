@@ -46,14 +46,24 @@ public class Main {
         int num2 = in.nextInt();
         System.out.println("\nВведите число: ");
         int num3 = in.nextInt();
-        System.out.println("Входит ли число в диапазон? " + isInRange(num1, num2, num3));*/
+        System.out.println("Входит ли число в диапазон? " + isInRange(num1, num2, num3));
 
         //Задание 8
         System.out.println("\nВведите число 1: ");
         int num1 = in.nextInt();
         System.out.println("\nВведите число 2: ");
         int num2 = in.nextInt();
-        System.out.println("Является ли одно число делителем другого? " + isDivisor(num1, num2));
+        System.out.println("Является ли одно число делителем другого? " + isDivisor(num1, num2));*/
+
+        //Задание 9
+        System.out.println("\nВведите число 1: ");
+        int num1 = in.nextInt();
+        System.out.println("\nВведите число 2: ");
+        int num2 = in.nextInt();
+        System.out.println("\nВведите число: ");
+        int num3 = in.nextInt();
+        System.out.println("Равны ли числа? " + isEqual(num1, num2, num3));
+
     }
 
     public static double fraction(double x) {
@@ -96,4 +106,7 @@ public class Main {
         return ((a % b == 0) || (b % a == 0));
     }
 
+    public static boolean isEqual(int a, int b, int c) {
+        return ((a == b) && (b == c) && (c == a));
+    }
 }
