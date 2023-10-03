@@ -28,12 +28,17 @@ public class Main {
         //Задание 4
         System.out.println("\nВведите число: ");
         int posOrNot = in.nextInt();
-        System.out.println("Число положительное? " + isPositive(posOrNot));*/
+        System.out.println("Число положительное? " + isPositive(posOrNot));
 
         //Задание 5
         System.out.println("\nВведите число: ");
         int digit = in.nextInt();
-        System.out.println("Число из двух знаков? " + is2Digits(digit));
+        System.out.println("Число из двух знаков? " + is2Digits(digit));*/
+
+        //Задание 6
+        System.out.println("\nВведите букву: ");
+        char charUpper = in.nextLine().charAt(0);
+        System.out.println("Буква большая? " + isUpperCase(charUpper));
     }
 
     public static double fraction(double x) {
@@ -67,6 +72,17 @@ public class Main {
     public static boolean is2Digits(int x){
         boolean res;
         if ((int)x/100 == 0){
+            res = true;
+        }
+        else {
+            res = false;
+        }
+        return res;
+    }
+
+    public static boolean isUpperCase(char x){
+        boolean res;
+        if (Character.isUpperCase(x)){
             res = true;
         }
         else {
